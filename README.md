@@ -1,5 +1,14 @@
 # Twitter NLP 
 The following code was developed to predict whether a twitter post informed us on a natural disaster. 
+___
+### Preprocessing the text
+#### Removal of '@' from text
+`spacy_cleaner` was used to create a text cleaning pipeline. The default methods within the library do not enable us to remove the twitter mentions (@).
+Text Before Preprocessing: `"@aria_ahrary @TheTawniest The out of control wild fires in California even in the Northern part of the state. Very troubling."`
+Text After Preprocessing: `"@aria_ahrary @thetawniest control wild fire california northern state troubling"`
+
+To overcome this, custom **Evaluator** and **replacer** functions were created to remove the mentions. These custome functions were added inside the spacy_cleaner pipeline: 
+Text After Custom Preprocessing: `"control wild fire california northern state troubling"`
 
 ___
 ### Running the Code 
@@ -16,4 +25,4 @@ To run the main file run the following command within your terminal `python main
 
 ___
 ### Comments and Contribution 
-This was my first project for Kaggle, any comment or contribution are welcome.
+This a project for Kaggle, any comment or contribution are welcome.
