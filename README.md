@@ -3,7 +3,7 @@ The following code was developed to predict whether a twitter post informed us o
 ___
 ### Preprocessing the text
 #### Removal of '@' from text
-`spacy_cleaner` was used to create a text cleaning pipeline. The default methods within the library do not enable us to remove the twitter mentions (@).
+`spacy_cleaner` was used to create a text cleaning pipeline. The default methods within the library do not enable us to remove the twitter mentions (@).\n
 Text Before Preprocessing: `"@aria_ahrary @TheTawniest The out of control wild fires in California even in the Northern part of the state. Very troubling."`
 Text After Preprocessing: `"@aria_ahrary @thetawniest control wild fire california northern state troubling"`
 
