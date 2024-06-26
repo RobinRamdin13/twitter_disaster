@@ -1,4 +1,4 @@
-# Twitter NLP 
+# Twitter NLP [In Progress]
 The following code was developed to predict whether a twitter post informed us on a natural disaster. 
 ___
 ### Preprocessing the text
